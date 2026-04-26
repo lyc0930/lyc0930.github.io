@@ -205,6 +205,12 @@ h1 span {
   color: var(--text-soft);
 }
 
+.ps-note {
+  font-size: 0.84rem;
+  font-style: italic;
+  color: color-mix(in oklab, var(--text-soft), var(--text) 12%);
+}
+
 .meta-list a,
 .content-section a {
   color: var(--brand);
