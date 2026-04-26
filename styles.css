@@ -118,7 +118,7 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(220px, 300px) 1fr;
+  grid-template-columns: minmax(200px, 250px) 1fr;
   gap: clamp(1.25rem, 3vw, 2.5rem);
   background: var(--surface);
   border: 1px solid var(--border);
@@ -316,8 +316,12 @@ h2 {
 }
 
 .venue-tag.conf,
-.venue-tag.journal {
+.venue-tag.conf {
   border-radius: 9px;
+}
+
+.venue-tag.journal {
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
 }
 
 .venue-tag.neurips {
@@ -518,10 +522,12 @@ footer {
 
   .hero-media {
     max-width: 300px;
+    margin: 0 auto;
   }
 
   .hero-media img {
     aspect-ratio: 1 / 1;
+    object-position: center top;
   }
 
   .hero-media .btn {
@@ -530,6 +536,14 @@ footer {
 
   .meta-row {
     gap: 0.45rem;
+  }
+
+  .paper-list {
+    padding-left: 0;
+  }
+
+  .venue-tag {
+    font-size: 0.82rem;
   }
 
   .pub-item {
