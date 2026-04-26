@@ -148,6 +148,29 @@ main {
   gap: 0.45rem;
 }
 
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.55rem;
+  margin-top: 0.15rem;
+}
+
+.meta-row a {
+  text-decoration: none;
+  color: var(--text-soft);
+  border: 1px solid var(--border);
+  background: var(--surface-alt);
+  border-radius: 999px;
+  padding: 0.26rem 0.62rem;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+}
+
+.meta-row a:hover,
+.meta-row a:focus-visible {
+  color: var(--brand);
+}
+
 .eyebrow {
   margin: 0;
   color: var(--brand);
@@ -184,6 +207,16 @@ h1 span {
   max-width: 68ch;
 }
 
+.hero-intro a {
+  color: #5f7488;
+  text-decoration-color: color-mix(in oklab, #5f7488, transparent 40%);
+}
+
+.hero-intro a:hover,
+.hero-intro a:focus-visible {
+  color: #445f78;
+}
+
 .cta-row {
   display: flex;
   flex-wrap: wrap;
@@ -214,22 +247,13 @@ h1 span {
   color: var(--text);
 }
 
-.meta-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.33rem;
-  color: var(--text-soft);
-}
-
 .ps-note {
+  margin: 0.45rem 0 0;
   font-size: 0.84rem;
   font-style: italic;
   color: color-mix(in oklab, var(--text-soft), var(--text) 12%);
 }
 
-.meta-list a,
 .content-section a {
   color: var(--brand);
 }
@@ -294,21 +318,19 @@ h2 {
   color: #fff;
 }
 
-.venue-tag.conf {
+.venue-tag.conf,
+.venue-tag.journal {
   border-radius: 9px;
 }
 
-.venue-tag.journal {
-  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
-}
+.venue-tag.neurips { background: #3f63b6; }
+.venue-tag.iclr { background: #2a7aa8; }
+.venue-tag.icde { background: #1a8d88; }
+.venue-tag.emnlp { background: #5c74b3; }
 
-.venue-tag.neurips { background: #8a4fff; }
-.venue-tag.iclr { background: #1565c0; }
-.venue-tag.icde { background: #00897b; }
-.venue-tag.emnlp { background: #ef6c00; }
-.venue-tag.tkdd { background: #6d4c41; }
-.venue-tag.tors { background: #5e35b1; }
-.venue-tag.iscience { background: #c62828; }
+.venue-tag.tkdd { background: #b76a3d; }
+.venue-tag.tors { background: #c47f3c; }
+.venue-tag.iscience { background: #b95a4c; }
 
 .pub-main {
   min-width: 0;
@@ -432,6 +454,10 @@ footer {
 
   .hero-media .btn {
     width: auto;
+  }
+
+  .meta-row {
+    gap: 0.45rem;
   }
 
   .pub-item {
