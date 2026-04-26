@@ -1,0 +1,9 @@
+title: "LUO Yanchen"
+description: "Academic homepage of LUO Yanchen (罗晏宸)"
+url: "https://lyc0930.github.io"
+baseurl: ""
+lang: "en"
+timezone: "Asia/Hong_Kong"
+
+# Keep defaults simple for a static one-page site.
+markdown: kramdown
