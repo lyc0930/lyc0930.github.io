@@ -1,27 +1,27 @@
 :root {
-  --bg: #f2f6fa;
-  --bg-accent: #dce8f4;
-  --surface: #ffffff;
-  --surface-alt: #f8fbff;
-  --text: #162431;
-  --text-soft: #95c2e5;
-  --border: #d5e2ee;
-  --brand: #0c5a8d;
-  --brand-soft: #95c2e5;
-  --shadow: 0 16px 38px rgba(20, 45, 68, 0.12);
+    --bg: #f2f6fa;
+    --bg-accent: #dce8f4;
+    --surface: #ffffff;
+    --surface-alt: #f8fbff;
+    --text: #162431;
+    --text-soft: #4a5d6d;
+    --border: #d5e2ee;
+    --brand: #0c5a8d;
+    --brand-soft: #95c2e5;
+    --shadow: 0 16px 38px rgba(20, 45, 68, 0.12);
 }
 
 html[data-theme="dark"] {
-  --bg: #0f1620;
-  --bg-accent: #1a2533;
-  --surface: #172231;
-  --surface-alt: #1d2a3b;
-  --text: #ecf3fb;
-  --text-soft: #26557d;
-  --border: #2b3e55;
-  --brand: #66b4e8;
-  --brand-soft: #26557d;
-  --shadow: 0 14px 34px rgba(6, 6, 6, 0.45);
+    --bg: #0f1620;
+    --bg-accent: #1a2533;
+    --surface: #172231;
+    --surface-alt: #1d2a3b;
+    --text: #ecf3fb;
+    --text-soft: #b5c6d8;
+    --border: #2b3e55;
+    --brand: #66b4e8;
+    --brand-soft: #26557d;
+    --shadow: 0 14px 34px rgba(6, 6, 6, 0.45);
 }
 
 * {
@@ -316,13 +316,13 @@ h2 {
 }
 
 .venue-tag.conf,
-.venue-tag.conf {
+.venue-tag.journal {
   border-radius: 9px;
 }
 
-.venue-tag.journal {
+/* .venue-tag.journal {
   clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
-}
+} */
 
 .venue-tag.neurips {
   background: rgba(87, 121, 176, 0.2);
