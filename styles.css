@@ -4,7 +4,7 @@
   --surface: #ffffff;
   --surface-alt: #f8fbff;
   --text: #162431;
-  --text-soft: #4a5d6d;
+  --text-soft: #95c2e5;
   --border: #d5e2ee;
   --brand: #0c5a8d;
   --brand-soft: #95c2e5;
@@ -17,11 +17,11 @@ html[data-theme="dark"] {
   --surface: #172231;
   --surface-alt: #1d2a3b;
   --text: #ecf3fb;
-  --text-soft: #b5c6d8;
+  --text-soft: #26557d;
   --border: #2b3e55;
   --brand: #66b4e8;
   --brand-soft: #26557d;
-  --shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+  --shadow: 0 14px 34px rgba(6, 6, 6, 0.45);
 }
 
 * {
