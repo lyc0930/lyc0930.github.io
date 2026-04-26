@@ -525,10 +525,10 @@ footer {
     margin: 0 auto;
   }
 
-  .hero-media img {
+  /* .hero-media img {
     aspect-ratio: 1 / 1;
     object-position: center top;
-  }
+  } */
 
   .hero-media .btn {
     width: auto;
@@ -543,7 +543,7 @@ footer {
   }
 
   .venue-tag {
-    font-size: 0.82rem;
+    font-size: 1.02rem;
   }
 
   .pub-item {
