@@ -144,10 +144,6 @@ main {
   width: 100%;
 }
 
-.hero-media .meta-list {
-  gap: 0.45rem;
-}
-
 .meta-row {
   display: flex;
   flex-wrap: wrap;
@@ -208,13 +204,13 @@ h1 span {
 }
 
 .hero-intro a {
-  color: #5f7488;
-  text-decoration-color: color-mix(in oklab, #5f7488, transparent 40%);
+  color: var(--text-soft);
+  text-decoration-color: color-mix(in oklab, var(--text-soft), transparent 38%);
 }
 
 .hero-intro a:hover,
 .hero-intro a:focus-visible {
-  color: #445f78;
+  color: var(--brand);
 }
 
 .cta-row {
@@ -315,7 +311,8 @@ h2 {
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1.2;
-  color: #fff;
+  color: var(--text-soft);
+  border: 1px solid transparent;
 }
 
 .venue-tag.conf,
@@ -323,14 +320,89 @@ h2 {
   border-radius: 9px;
 }
 
-.venue-tag.neurips { background: #3f63b6; }
-.venue-tag.iclr { background: #2a7aa8; }
-.venue-tag.icde { background: #1a8d88; }
-.venue-tag.emnlp { background: #5c74b3; }
+.venue-tag.neurips {
+  background: rgba(87, 121, 176, 0.2);
+  border-color: rgba(87, 121, 176, 0.38);
+  color: #39597e;
+}
 
-.venue-tag.tkdd { background: #b76a3d; }
-.venue-tag.tors { background: #c47f3c; }
-.venue-tag.iscience { background: #b95a4c; }
+.venue-tag.iclr {
+  background: rgba(64, 140, 179, 0.2);
+  border-color: rgba(64, 140, 179, 0.38);
+  color: #31627c;
+}
+
+.venue-tag.icde {
+  background: rgba(56, 151, 150, 0.2);
+  border-color: rgba(56, 151, 150, 0.38);
+  color: #2e6767;
+}
+
+.venue-tag.emnlp {
+  background: rgba(105, 133, 182, 0.2);
+  border-color: rgba(105, 133, 182, 0.38);
+  color: #405d83;
+}
+
+.venue-tag.tkdd {
+  background: rgba(186, 118, 72, 0.2);
+  border-color: rgba(186, 118, 72, 0.4);
+  color: #7b4e2f;
+}
+
+.venue-tag.tors {
+  background: rgba(205, 139, 69, 0.2);
+  border-color: rgba(205, 139, 69, 0.4);
+  color: #83572d;
+}
+
+.venue-tag.iscience {
+  background: rgba(187, 98, 87, 0.2);
+  border-color: rgba(187, 98, 87, 0.4);
+  color: #7d433a;
+}
+
+html[data-theme="dark"] .venue-tag.neurips {
+  background: rgba(116, 153, 214, 0.22);
+  border-color: rgba(134, 169, 222, 0.45);
+  color: #d4e5ff;
+}
+
+html[data-theme="dark"] .venue-tag.iclr {
+  background: rgba(93, 171, 212, 0.22);
+  border-color: rgba(110, 181, 220, 0.45);
+  color: #d7efff;
+}
+
+html[data-theme="dark"] .venue-tag.icde {
+  background: rgba(84, 178, 177, 0.22);
+  border-color: rgba(108, 194, 192, 0.45);
+  color: #d8fbf6;
+}
+
+html[data-theme="dark"] .venue-tag.emnlp {
+  background: rgba(128, 154, 209, 0.22);
+  border-color: rgba(145, 169, 220, 0.45);
+  color: #dbe6ff;
+}
+
+html[data-theme="dark"] .venue-tag.tkdd {
+  background: rgba(208, 141, 96, 0.23);
+  border-color: rgba(220, 157, 116, 0.45);
+  color: #ffe5d2;
+}
+
+html[data-theme="dark"] .venue-tag.tors {
+  background: rgba(220, 161, 95, 0.23);
+  border-color: rgba(230, 174, 115, 0.45);
+  color: #ffecd7;
+}
+
+html[data-theme="dark"] .venue-tag.iscience {
+  background: rgba(204, 130, 122, 0.23);
+  border-color: rgba(216, 149, 141, 0.45);
+  color: #ffe2de;
+}
 
 .pub-main {
   min-width: 0;
